@@ -11,11 +11,11 @@ public class LoggingAspect {
 
     @Before("execution(* demo.ShoppingCart.checkout())")
     public void beforelogger(){
-        System.out.println("logger");
+        System.out.println(" before logger");
     }
 
     @After("execution(* demo.ShoppingCart.checkout())")
     public void afterlogger(){
-        System.out.println("logger");
+        System.out.println("after logger");
     }
 }
